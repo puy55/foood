@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ภาวะโภชนาการเกิน</title>
+    <style>
+        /* การตั้งค่าโทนสีทั่วไป */
+        body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 120px; /* เพิ่มพื้นที่ให้ footer อยู่ด้านล่าง */
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+        /* Header */
+        header {
+            background-color: #081668;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            color: #0928b4;
+            font-size: 2em;
+        }
+
+        h3 {
+            color: #2c3e50;
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+
+        ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+
+      /* ปุ่ม */
+.home-button {
+    display: block;
+    background-color: #f1bf17;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 50px auto; /* ทำให้ปุ่มอยู่กลางโดยเพิ่ม margin ทั้งซ้ายและขวา */
+    text-align: center;
+    width: auto;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.home-button:hover {
+    background-color: #030d91;
+    transform: scale(1.05);
+}
+
+.home-button:focus {
+    outline: none;
+}
+
+/* ปุ่ม */
+.home-button {
+    display: block;
+    background-color: #f1bf17;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 50px auto; /* ทำให้ปุ่มอยู่กลางโดยเพิ่ม margin ทั้งซ้ายและขวา */
+    text-align: center;
+    width: auto;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.home-button:hover {
+    background-color: #030d91;
+    transform: scale(1.05);
+}
+
+.home-button:focus {
+    outline: none;
+}
+
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: #3954cc;
+    background-color: #828eb8;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-links a:hover {
+    background-color: #d4b72e;
+    transform: translateY(-5px); /* เคลื่อนย้ายปุ่มเล็กน้อยเมื่อโฮเวอร์ */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+       /* ปรับรูปภาพให้เรียงกันในแนวนอน */
+       .image-container {
+            display: flex;
+            justify-content: center; /* จัดให้อยู่กลาง */
+            gap: 20px; /* เพิ่มช่องว่างระหว่างรูป */
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 100%; /* ทำให้รูปเต็มความกว้างของ container */
+            max-width: 400px; /* จำกัดขนาดสูงสุดของแต่ละรูป */
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- เนื้อหาหลักของเว็บเพจ -->
+    <header>
+        <h1>ภาวะโภชนาการขาด (Malnutrition)</h1>
+    </header>
+ <!-- ใช้ container สำหรับรูปภาพ -->
+ <div class="image-container">
+    <img src="./img/คนผอม.jpg" alt="คนผอม">
+    <img src="./img/โรคที่เกิดจากการขาดสารอาหาร.png" alt="โรคที่เกิดจากการขาดสารอาหาร">
+</div>
+    <section id="info">
+        <h2>ข้อมูลพื้นฐานเกี่ยวกับภาวะโภชนาการขาด</h2>
+        <p>ภาวะโภชนาการขาดเกิดจากการขาดสารอาหารที่จำเป็นต่อร่างกาย เช่น โปรตีน วิตามิน หรือแร่ธาตุที่สำคัญ</p>
+        <h3>สาเหตุที่ทำให้เกิดภาวะโภชนาการขาด</h3>
+        <ul>
+            <li>การรับประทานอาหารไม่เพียงพอ</li>
+            <li>การเจ็บป่วยเรื้อรัง</li>
+            <li>การดูดซึมสารอาหารผิดปกติ</li>
+        </ul>
+    </section>
+
+    
+        <section id="symptoms">
+            <h2>อาการและสัญญาณของภาวะโภชนาการขาด</h2>
+            <p>อาการของโรคนี้ขึ้นอยู่กับว่าร่างกายขาดสารอาหารชนิดใด ซึ่งอาการโดยทั่วไปที่อาจสังเกตได้ มีดังนี้:</p>
+            <ul>
+                <li>น้ำหนักลดโดยไม่ทราบสาเหตุ</li>
+                <li>ผมร่วง</li>
+                <li>ตัวซีด</li>
+                <li>ง่วง อ่อนเพลีย</li>
+                <li>เวียนศีรษะ</li>
+                <li>มีความอยากอาหารที่ผิดปกติ</li>
+                <li>มีปัญหาในการย่อยอาหาร ซึ่งอาจทำให้ท้องผูก</li>
+                <li>ประจำเดือนมาไม่ปกติ</li>
+                <li>รู้สึกเสียวหรือชาที่ข้อต่อ</li>
+                <li>ไม่มีสมาธิ วอกแวกง่าย</li>
+                <li>หดหู่ ซึมเศร้า</li>
+                <li>มีปัญหาด้านการหายใจ</li>
+                <li>ใจสั่น</li>
+                <li>เป็นลมหมดสติ</li>
+                <li>ติดเชื้อหรือเจ็บป่วยง่าย ป่วยแล้วหายช้ากว่าปกติ</li>
+                <li>ผู้ป่วยเด็กอาจเจริญเติบโตช้า หรือมีน้ำหนักตัวต่ำกว่าเกณฑ์</li>
+            </ul>
+           
+
+
+    <section id="prevention">
+        <h2>การรักษาและป้องกันภาวะโภชนาการขาด</h2>
+        <h3>คำแนะนำในการปรับพฤติกรรมการกิน</h3>
+        <ul>
+            <li>กินอาหารที่หลากหลายและครบถ้วน</li>
+            <li>เพิ่มการบริโภคผลไม้และผัก</li>
+            <li>ดื่มน้ำมากๆ</li>
+        </ul>
+        <h3>ตัวอย่างเมนูอาหาร</h3>
+        <ul>
+            <li>ข้าวต้มปลา</li>
+            <li>สลัดผักใบเขียว</li>
+            <li>ไข่ตุ๋น</li>
+        </ul>
+    </section>
+
+
+    <section id="blog">
+        <article>
+            <h3>วิธีตรวจสอบภาวะโภชนาการขาด</h3>
+            <p>การตรวจสอบการขาดสารอาหารสามารถทำได้ง่ายๆ</p>
+            <a href="IBM.HTML" class="home-button">คำนวณ IBM</a>
+        </article>
+    </section>
+
+    <!-- ปุ่มไปหน้าแรก -->
+    <a href="index.html" class="home-button">ไปหน้าแรก</a>
+
+    <!-- Footer -->
+    <footer> 
+        <footer> 
+            <div class="footer-container">         
+                <h3>ช่องทางติดต่อ</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="./team.html">ผู้จัดทำ</a></li>
+                        <li><a href="./Vision and Goals.html">วิสัยทัศน์และเป้าหมาย</a></li>
+                        <li><a href="https://forms.gle/q2JZXDgG2cfNfXWG6">แบบประเมิน</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+</body>
+</html> 

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทีมงาน</title>
+    <style>
+        /* ตั้งค่าพื้นฐาน */
+     /* ตั้งค่าพื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    background-color: #4c98af;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    margin: 10px;
+    flex: 1 1 280px;
+}
+
+.team-member img {
+    width: 100%; /* ขยายภาพให้เต็มพื้นที่ */
+    height: 500px; /* ตั้งความสูงของภาพ */
+    object-fit: cover; /* ทำให้ภาพเต็มพื้นที่โดยไม่ยืดหยุ่น */
+    border-radius: 8px;
+    margin-bottom: 15px; /* เพิ่มระยะห่างระหว่างภาพและข้อความ */
+}
+
+.team-member h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.team-member p {
+    color: #555;
+    font-size: 16px;
+}
+
+.home-button {
+    display: inline-block;
+    background-color: #9b7807;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+.home-button:hover { 
+    background-color: #030d91;
+    transform: scale(1.05);
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .home-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>แนะนำทีมของเรา</h1>
+    </header>
+    
+    <section class="team-container">
+        <div class="team-member">
+            <img src="./img/คำฝ้าย.jpg" alt="สมาชิกทีม 1">
+            <h2>นางสาวกัญญ์ณพัชญ์ฤดี วิจิตร์ </h2>
+            
+        </div>
+        <div class="team-member">
+            <img src="./img/เอมมี่.jpg" alt="สมาชิกทีม 2">
+            <h2>นายธีร์ธวัช สายงาม</h2>
+          
+        </div>
+        <div class="team-member">
+            <img src="./img/มิ้ว.jpg" alt="สมาชิกทีม 3">
+            <h2>นางสาวพิมพ์ชนก มุสิกวัน </h2>
+           
+        </div>
+    </section>
+    
+    <div class="cooo">
+        <a href="./index.html" class="home-button">กลับไปหน้าแรก</a>
+    </div>
+
+</body>
+</html>

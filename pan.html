@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การวางแผนมื้ออาหาร</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        .meal-plan {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .meal {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .meal h2 {
+            color: #4CAF50;
+        }
+        .meal ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .meal li {
+            margin-bottom: 10px;
+        }
+        footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: #3954cc;
+    background-color: #828eb8;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-links a:hover {
+    background-color: #d4b72e;
+    transform: translateY(-5px); /* เคลื่อนย้ายปุ่มเล็กน้อยเมื่อโฮเวอร์ */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>การวางแผนมื้ออาหารสำหรับหนึ่งสัปดาห์</h1>
+    </header>
+
+    <div class="meal-plan">
+        <!-- วันจันทร์ -->
+        <div class="meal">
+            <h2>วันจันทร์</h2>
+            <ul>
+                <li>เช้า: ข้าวโอ๊ตผสมผลไม้ (บลูเบอร์รี่, กล้วย) และเมล็ดเชีย</li>
+                <li>กลางวัน: สลัดไก่ย่างกับอะโวคาโด, มะเขือเทศ, แตงกวา และน้ำสลัดบัลซามิก</li>
+                <li>เย็น: ปลาแซลมอนย่างกับข้าวกล้องและผักต้ม (บรอกโคลี, แครอท)</li>
+            </ul>
+        </div>
+
+        <!-- วันอังคาร -->
+        <div class="meal">
+            <h2>วันอังคาร</h2>
+            <ul>
+                <li>เช้า: โยเกิร์ตธรรมชาติผสมกราโนล่าและผลไม้สด</li>
+                <li>กลางวัน: ข้าวกล้องผัดไข่กับผักรวม (แครอท, มะเขือเทศ, เห็ด) และเต้าหู้</li>
+                <li>เย็น: สเต๊กไก่กับมันฝรั่งอบและสลัดผักสด</li>
+            </ul>
+        </div>
+
+        <!-- วันพุธ -->
+        <div class="meal">
+            <h2>วันพุธ</h2>
+            <ul>
+                <li>เช้า: ขนมปังโฮลวีตทาอะโวคาโดและไข่ลวก</li>
+                <li>กลางวัน: ซุปผักรวมกับขนมปังโฮลวีต</li>
+                <li>เย็น: ก๋วยเตี๋ยวข้าวกล้องกับผักและโปรตีนจากหมูย่างหรือไก่</li>
+            </ul>
+        </div>
+
+        <!-- วันพฤหัสบดี -->
+        <div class="meal">
+            <h2>วันพฤหัสบดี</h2>
+            <ul>
+                <li>เช้า: สมูทตี้ผลไม้ (กล้วย, สตรอเบอร์รี่, โยเกิร์ต, ผักโขม)</li>
+                <li>กลางวัน: ข้าวกล้องกับแกงผักและไก่</li>
+                <li>เย็น: ปลาทอดกับข้าวกล้องและผักย่าง</li>
+            </ul>
+        </div>
+
+        <!-- วันศุกร์ -->
+        <div class="meal">
+            <h2>วันศุกร์</h2>
+            <ul>
+                <li>เช้า: ข้าวต้มกับไข่ต้มและผัก</li>
+                <li>กลางวัน: สลัดธัญพืชกับทูน่าและผักสด</li>
+                <li>เย็น: สเต๊กปลาแซลมอนกับมันฝรั่งอบและผักสด</li>
+            </ul>
+        </div>
+
+        <!-- วันเสาร์ -->
+        <div class="meal">
+            <h2>วันเสาร์</h2>
+            <ul>
+                <li>เช้า: พานเค้กจากแป้งข้าวโอ๊ตกับผลไม้สด</li>
+                <li>กลางวัน: ข้าวกล้องผัดกุ้งกับผัก</li>
+                <li>เย็น: ยำทูน่ากับผักสดและข้าวโพดต้ม</li>
+            </ul>
+        </div>
+
+        <!-- วันอาทิตย์ -->
+        <div class="meal">
+            <h2>วันอาทิตย์</h2>
+            <ul>
+                <li>เช้า: ขนมปังโฮลวีตกับเนยถั่วและกล้วย</li>
+                <li>กลางวัน: ข้าวผัดผักและไข่</li>
+                <li>เย็น: สเต๊กหมูย่างกับสลัดผักและข้าวกล้อง</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer> 
+        <footer> 
+            <div class="footer-container">         
+                <h3>ช่องทางติดต่อ</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="./team.html">ผู้จัดทำ</a></li>
+                        <li><a href="./Vision and Goals.html">วิสัยทัศน์และเป้าหมาย</a></li>
+                        <li><a href="https://forms.gle/q2JZXDgG2cfNfXWG6">แบบประเมิน</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

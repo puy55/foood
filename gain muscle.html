@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เพิ่มกล้าม</title>
+<style>
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 5px 0;
+            color: #666;
+        }
+        .menu-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .menu-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+        }
+        .menu-item h3 {
+            color: #333;
+        }
+        .menu-item ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu-item ul li {
+            margin: 5px 0;
+            color: #666;
+        }
+        button {
+        background-color: #008CBA;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #005f73;
+    }
+    footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: #3954cc;
+    background-color: #828eb8;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-links a:hover {
+    background-color: #d4b72e;
+    transform: translateY(-5px); /* เคลื่อนย้ายปุ่มเล็กน้อยเมื่อโฮเวอร์ */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+    </style>
+    </head>
+
+<body>
+    <img src="./img/เพิ่มกล้าม.png">
+    <div class="content">
+        <h2>อาหารที่ควรทานเพื่อเพิ่มกล้ามเนื้อ</h2>
+        <p>อาหารที่ช่วยในการเพิ่มกล้ามเนื้อควรมีโปรตีนสูง และให้พลังงานที่เพียงพอสำหรับการฝึกซ้อมและการฟื้นฟูร่างกาย นี่คือบางประเภทของอาหารที่แนะนำ:</p>
+
+        <h3>1. โปรตีนสูง</h3>
+        <ul>
+            <li>เนื้อสัตว์ (ไก่, เนื้อวัว, หมู)</li>
+            <li>ปลา (แซลมอน, ทูน่า, ปลาเทราท์)</li>
+            <li>ไข่</li>
+            <li>เต้าหู้หรือถั่วเหลือง</li>
+            <li>ผลิตภัณฑ์นม (โยเกิร์ต, ชีส, นม)</li>
+            <li>โปรตีนจากพืช (ถั่วต่างๆ, คีนัว, แฟลกซีด)</li>
+        </ul>
+
+        <h3>2. คาร์โบไฮเดรตที่มีคุณภาพ</h3>
+        <ul>
+            <li>ข้าวกล้อง</li>
+            <li>ขนมปังโฮลวีท</li>
+            <li>มันหวาน</li>
+            <li>พืชผักต่างๆ เช่น ผักใบเขียว</li>
+        </ul>
+
+        <h3>3. ไขมันดี</h3>
+        <ul>
+            <li>อะโวคาโด</li>
+            <li>น้ำมันมะกอก</li>
+            <li>เมล็ดพืชและถั่ว (อัลมอนด์, วอลนัท)</li>
+        </ul>
+
+        <h3>4. อาหารเสริม</h3>
+        <ul>
+            <li>เวย์โปรตีน (สำหรับเสริมโปรตีนเพิ่มเติมหลังการออกกำลังกาย)</li>
+            <li>Creatine (ช่วยเพิ่มพลังงานในการฝึกซ้อม)</li>
+        </ul>
+
+        <p>การกินอาหารเหล่านี้ร่วมกับการออกกำลังกายแบบฝึกหนัก เช่น การยกน้ำหนัก จะช่วยให้กล้ามเนื้อเพิ่มขึ้นได้เร็วขึ้นครับ</p>
+    </div>
+
+    <div class="menu-container">
+        <div class="menu-item">
+            <h3>มื้อเช้า</h3>
+            <ul>
+                <li>ข้าวโอ๊ต 1 ถ้วย</li>
+                <li>ไข่ต้ม 2 ฟอง หรือไข่คน</li>
+                <li>ผลไม้ (กล้วย, เบอร์รี่, แอปเปิ้ล)</li>
+                <li>ผงโปรตีน (ถ้าอยากเพิ่มโปรตีน)</li>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <h3>มื้อกลางวัน</h3>
+            <ul>
+                <li>ไก่ย่าง 150-200 กรัม</li>
+                <li>มันหวานอบ 1 หัว</li>
+                <li>ผักสดหรือผักต้ม (ผักโขม, บร็อคโคลี่, แครอท)</li>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <h3>มื้อเย็น</h3>
+            <ul>
+                <li>สลัดผัก (ผักใบเขียว, มะเขือเทศ, แตงกวา)</li>
+                <li>ทูน่า 1 กระป๋อง (ในน้ำแร่)</li>
+                <li>อะโวคาโด 1 ลูก (หั่นเป็นชิ้น)</li>
+                <li>น้ำมันมะกอก 1 ช้อนโต๊ะ</li>
+                <li>ถั่วหรือน้ำมะนาวเพื่อเพิ่มรสชาติ</li>
+            </ul>
+        </div>
+    </div>
+    <a href="index.html">
+        <button>กลับหน้าแรก</button>
+    </a>
+    <footer> 
+        <footer> 
+            <div class="footer-container">         
+                <h3>ช่องทางติดต่อ</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="./team.html">ผู้จัดทำ</a></li>
+                        <li><a href="./Vision and Goals.html">วิสัยทัศน์และเป้าหมาย</a></li>
+                        <li><a href="https://forms.gle/q2JZXDgG2cfNfXWG6">แบบประเมิน</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+</footer>
+</body>
+</html>
+
